@@ -3,6 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>PORTEN</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
@@ -12,15 +24,7 @@
 				<div class="container">
 					<div class="header__top">
 						<div class="top__info">
-							<span class="top__info-phone">
-								<img
-									src="images/header/phone.svg"
-									width="14"
-									height="14"
-									alt="Іконка телефону"
-								/>
-								8 (812) 123-45-67 |
-							</span>
+							<span class="top__info-phone">8 (812) 123-45-67 |</span>
 							<span class="top__info-schedule">
 								Працюємо 7 днів на тиждень
 							</span>
@@ -28,49 +32,48 @@
 						</div>
 						<div class="top__actions">
 							<button class="btn-logout"></button>
-							<button class="btn-sm icon icon--login" type="button">
-								Вхід /
-							</button>
-							<button class="btn-sm icon icon--register" type="button">
-								Реєстрація
-							</button>
+							<button class="btn-login" type="button">Вхід</button>
+							/
+							<button class="btn-register" type="button">Реєстрація</button>
 						</div>
 					</div>
-					<nav class="nav">
+				</div>
+				<nav class="nav">
+					<div class="container nav__content">
 						<a class="logo" href="/">
 							<img
 								class="logo__img"
 								width="104"
-								src="images/header/logo.webp"
+								height="24"
+								src="images/header/logo.svg"
 								alt="Логотип Porten"
 							/>
 						</a>
-						<button type="button" class="header__burger">
-							<span class="header__burger-line"></span>
-							<span class="sr-only">Відкрити меню</span>
-						</button>
-						<ul class="menu">
-							<li class="menu__item">
-								<a href="" class="menu__link menu__link--active">Сподобалось</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Особистий кабінет</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Налаштування</a>
-							</li>
-						</ul>
-						<div class="nav__actions">
-							<button class="btn-sm icon icon--search" type="button">
-								<span class="sr-only">Відкрити пошук</span>
-							</button>
-							<button class="btn-sm icon icon--cart" type="button">
-								<span class="sr-only">Переглянути кошик</span>
-								<span class="btn-counter"></span>
-							</button>
+						<div class="nav__inner">
+							<ul class="menu">
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link--active"
+										>Сподобалось</a
+									>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Особистий кабінет</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Налаштування</a>
+								</li>
+							</ul>
+							<div class="nav__actions">
+								<button class="icon icon--cart" type="button">
+									<span class="sr-only">Переглянути кошик</span>
+								</button>
+								<button class="icon icon--search" type="button">
+									<span class="sr-only">Відкрити пошук</span>
+								</button>
+							</div>
 						</div>
-					</nav>
-				</div>
+					</div>
+				</nav>
 			</header>
 			<main>
 				<section class="hero">
@@ -143,7 +146,12 @@
 				<section class="collection">
 					<div class="container">
 						<div class="collection__inner">
-							<img src="images/collection/collection.webp" width="936" height="600" alt="Фото колекції" />
+							<img
+								src="images/collection/collection.webp"
+								width="936"
+								height="600"
+								alt="Фото колекції"
+							/>
 							<div class="collection__content">
 								<h2 class="title">Колекція 2018</h2>
 								<p>
@@ -490,6 +498,6 @@
 			</footer>
 		</div>
 
-		<script src="main.js"></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

@@ -1,3 +1,256 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
 body {
-  background-color: #000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.33;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  transition: scale 0.3s ease-in-out;
+}
+.icon:hover {
+  scale: 1.2;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: gray;
+  padding: 14px 0;
+}
+
+.top__info-phone::before {
+  content: "";
+  background-image: url("../images/header/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+  margin-bottom: -3px;
+}
+
+.btn-logout::before {
+  content: "";
+  background-image: url("../images/header/logout.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 19px;
+  margin-bottom: -3px;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav {
+  background-color: #0f0f0f;
+  transition: top 0.3s ease-in-out;
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__content {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.menu__link {
+  color: gray;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: none;
+  padding: 30.8px 15px;
+}
+.menu__link:hover {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+
+.icon--search {
+  content: "";
+  background-image: url("../images/header/search.svg");
+  width: 17px;
+  height: 17px;
+}
+
+.icon--cart {
+  content: "";
+  background-image: url("../images/header/cart.svg");
+  width: 23px;
+  height: 18px;
+}
+
+.logo__img {
+  width: 104px;
+}
+
+.hero {
+  background-image: url("../images/hero/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 810px;
 }/*# sourceMappingURL=style.css.map */
